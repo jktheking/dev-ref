@@ -1,4 +1,4 @@
-# processorflow framewok
+# processflow framewok
 This is a small processflow framework. As of now it has been implemented for processes to be executed in chain or pipeline.
 Each process represents unit of work.
 
