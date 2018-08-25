@@ -2,6 +2,7 @@
 This is a small processflow framework. As of now it has been implmented for processes to be executed in chain or pipeline.
 
 
+Refer the sample package: edu.jktheking.processflow.sample
 How to configure unit of work in the framework:
 ===============================================
 
@@ -52,7 +53,7 @@ How to configure unit of work in the framework:
 }
 
 
-How to use:
+How to use: refer the test package
 ========== 
 	@Before
 	public void configure() {
