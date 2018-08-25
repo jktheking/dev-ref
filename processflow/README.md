@@ -3,8 +3,9 @@ This is a small processflow framework. As of now it has been implmented for proc
 
 
 How to configure unit of work in the framework:
-===================================================
-public class ProcessorConfigurer {
+===============================================
+
+	public class ProcessorConfigurer {
 
 	public static final DefaultCompositeProcessorRegistry registry = new DefaultCompositeProcessorRegistry();
 
@@ -50,10 +51,10 @@ public class ProcessorConfigurer {
 	}
 }
 
-======================================================================================================
+
 How to use:
-==========
-@Before
+========== 
+	@Before
 	public void configure() {
 		ProcessorConfigurer.configureProcessors();
 	}
