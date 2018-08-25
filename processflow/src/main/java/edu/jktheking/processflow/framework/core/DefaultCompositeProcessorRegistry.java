@@ -1,6 +1,7 @@
 package edu.jktheking.processflow.framework.core;
 
 
+import edu.jktheking.processflow.support.CompositeProcessorId;
 import edu.jktheking.processflow.support.EnumMapRegistry;
 import edu.jktheking.processflow.utils.Assert;
 

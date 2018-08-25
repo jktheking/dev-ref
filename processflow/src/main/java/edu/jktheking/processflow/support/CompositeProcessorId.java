@@ -1,4 +1,6 @@
-package edu.jktheking.processflow.framework.core;
+package edu.jktheking.processflow.support;
+
+import edu.jktheking.processflow.framework.core.ProcessorType;
 
 /**
  * Identifier for composite processor.

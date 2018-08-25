@@ -2,6 +2,7 @@ package edu.jktheking.processflow.framework.core;
 
 import java.util.Iterator;
 
+import edu.jktheking.processflow.support.ProcessorId;
 import edu.jktheking.processflow.utils.Assert;
 /**
  * super-type abstraction for processors container.

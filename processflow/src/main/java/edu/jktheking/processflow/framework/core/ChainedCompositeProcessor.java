@@ -1,5 +1,7 @@
 package edu.jktheking.processflow.framework.core;
 
+import edu.jktheking.processflow.support.ProcessorId;
+
 public interface ChainedCompositeProcessor<P extends Processor> extends CompositeProcessor<P> {
 
 	void process(ProcessorContext context, ProcessorId start, ProcessorId end) throws RuntimeProcessorException;

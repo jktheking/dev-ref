@@ -2,7 +2,8 @@ package edu.jktheking.processflow.framework.core;
 
 import java.util.ListIterator;
 
-
+import edu.jktheking.processflow.support.CompositeProcessorId;
+import edu.jktheking.processflow.support.ProcessorId;
 import edu.jktheking.processflow.utils.Assert;
 /**
  * Default implementation for {@code ChainedCompositeProcessor}

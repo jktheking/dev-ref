@@ -5,6 +5,8 @@ import java.util.EnumSet;
 import java.util.Optional;
 import java.util.Set;
 
+import edu.jktheking.processflow.support.ProcessorId;
+
 /**
  * It is a processor 'unit' for representing single responsibility.
  */

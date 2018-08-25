@@ -1,5 +1,7 @@
 package edu.jktheking.processflow.framework.core;
 
+import edu.jktheking.processflow.support.CompositeProcessorId;
+
 /**
  * 
  * Represents abstraction over group of processors working as single unit of work.

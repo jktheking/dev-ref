@@ -6,11 +6,11 @@ package edu.jktheking.processflow.framework.core;
 public enum ProcessorType {
 
 	//
-	PRE_PROCESSOR(PreProcessor.class),
+	PRE_PROCESSOR(Processor.class),
 	//
-	POST_PROCESSOR(PostProcessor.class),
+	POST_PROCESSOR(Processor.class),
 	//
-	CARDINAL_PROCESSOR(CardinalProcessor.class),
+	CARDINAL_PROCESSOR(Processor.class),
 	//
 	UNKNOWN_TYPE(Processor.class);
 

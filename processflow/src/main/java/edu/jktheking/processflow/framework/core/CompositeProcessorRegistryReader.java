@@ -1,5 +1,7 @@
 package edu.jktheking.processflow.framework.core;
 
+import edu.jktheking.processflow.support.CompositeProcessorId;
+
 /**
  * 
  * Provides the interface to get the composite processor from  processor registry.

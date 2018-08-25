@@ -4,6 +4,8 @@ import java.util.Collections;
 import java.util.Optional;
 import java.util.Set;
 
+import edu.jktheking.processflow.support.ProcessorId;
+
 /**
  * Base class for normal processor classification.
  * 

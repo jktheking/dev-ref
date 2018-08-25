@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 
+import edu.jktheking.processflow.support.HandlerType;
 import edu.jktheking.processflow.utils.Assert;
 
 /**
@@ -18,14 +19,12 @@ import edu.jktheking.processflow.utils.Assert;
  */
 public final class ProcessorContext implements ParameterContext {
 
-	private final String msisdn;
-	private final HandlerType operator;
+	private final HandlerType handlerType;
 	private final Set<AppState> appStates;
 	private final Map<ProcessorContextAttribute, Object> attributeMap;
 	
-	private ProcessorContext(String msisdn, HandlerType operator) {
-		this.msisdn = msisdn;
-		this.operator = operator;
+	private ProcessorContext(HandlerType handlerType) {
+		this.handlerType = handlerType;
 		this.attributeMap = new EnumMap<>(ProcessorContextAttribute.class);
 		this.appStates = EnumSet.noneOf(AppState.class);
 	}
@@ -33,17 +32,8 @@ public final class ProcessorContext implements ParameterContext {
 	/**
 	 * Method to construct the ProcessorContext
 	 */
-	public static ProcessorContext newProcessorContext(String msisdn, HandlerType operator) {
-		return new ProcessorContext(msisdn, operator);
-	}
-
-
-	public String getMsisdn() {
-		return msisdn;
-	}
-
-	public HandlerType getOperator() {
-		return operator;
+	public static ProcessorContext newProcessorContext(HandlerType handlerType) {
+		return new ProcessorContext(handlerType);
 	}
 
 	public Set<AppState> getAppStates() {
@@ -132,6 +122,10 @@ public final class ProcessorContext implements ParameterContext {
 		Assert.isTypeCastCompatible(Map.class, attributeInstance,
 				typeCastIncompatibleMessage(attribute, Map.class, attributeInstance));
 		return (Map<K, V>) attributeInstance;
+	}
+
+	public HandlerType getHandlerType() {
+		return handlerType;
 	}
 
 }

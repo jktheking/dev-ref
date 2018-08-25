@@ -1,4 +1,4 @@
-package edu.jktheking.processflow.framework.core;
+package edu.jktheking.processflow.support;
 
 import java.util.HashMap;
 import java.util.Map;
