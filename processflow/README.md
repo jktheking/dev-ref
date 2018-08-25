@@ -1,5 +1,6 @@
 # processorflow framewok
-This is a small processflow framework. As of now it has been implmented for processes to be executed in chain or pipeline.
+This is a small processflow framework. As of now it has been implemented for processes to be executed in chain or pipeline.
+Each process represents unit of work.
 
 
 Refer the sample package: edu.jktheking.processflow.sample
