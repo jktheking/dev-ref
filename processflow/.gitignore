@@ -1,6 +1,6 @@
 .gradle
 /build/
-bin/
+/bin/
 !gradle/wrapper/gradle-wrapper.jar
 
 ### STS ###
@@ -26,3 +26,4 @@ bin/
 /dist/
 /nbdist/
 /.nb-gradle/
+
