@@ -3,7 +3,8 @@ This is a small processflow framework. As of now it has been implemented for pro
 Each process represents unit of work.
 
 
-Refer the sample package: edu.jktheking.processflow.sample
+Refer the sample package: "edu.jktheking.processflow.sample"
+
 How to configure unit of work in the framework:
 ===============================================
 
