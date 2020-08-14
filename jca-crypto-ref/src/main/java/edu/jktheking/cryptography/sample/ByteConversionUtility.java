@@ -69,6 +69,7 @@ public class ByteConversionUtility {
 
 	/**
 	 * since int is 4 byte in java, so shift order is 24,16,8,0.
+	 * 0xff is 255 = 00000000000000000000000011111111 --> [24->0 and 8->1] , acts as bit mask
 	 */
 	public static byte[] intToBytes(final int data) {
 		return new byte[] { (byte) ((data >> 24) & 0xff), (byte) ((data >> 16) & 0xff), (byte) ((data >> 8) & 0xff),
