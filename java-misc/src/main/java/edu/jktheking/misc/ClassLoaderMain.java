@@ -95,6 +95,12 @@ import java.util.ArrayList;
 public class ClassLoaderMain {
 
 	public static void main(String[] args) throws ClassNotFoundException {
+		
+		Package[] pkg = Package.getPackages();
+		for(Package p : pkg) {
+			System.out.println(p);
+			
+		}
 		printClassLoaders();
 	}
 
