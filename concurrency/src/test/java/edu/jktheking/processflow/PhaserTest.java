@@ -1,13 +1,15 @@
 package edu.jktheking.processflow;
 
-import static org.junit.Assert.assertEquals;
+
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Phaser;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
 import edu.jktheking.concurrent.phaser.TaskPhaseRunnable;
 
@@ -16,7 +18,7 @@ public class PhaserTest {
 	private ExecutorService executorService;
 	private Phaser phaser;
 
-	@Before
+	@BeforeAll
 	public void configure() {
 
 		executorService = Executors.newFixedThreadPool(10);
@@ -72,6 +74,11 @@ public class PhaserTest {
 		
 		
 
+	}
+
+	private void assertEquals(String string, int actual, int phase) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
